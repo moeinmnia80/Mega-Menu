@@ -1,0 +1,82 @@
+/* =============================
+   Base Button Structure
+   ============================= */
+.c-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  position: relative;
+  cursor: pointer;
+}
+
+/* =============================
+   Button Appearance Variations
+   ============================= */
+.c-btn--outline-primary {
+  color: var(--color-primary);
+  stroke: var(--color-primary);
+  background-color: var(--bg-primary);
+}
+
+.c-btn--outline-gray {
+  color: var(--color-gray);
+  stroke: var(--color-black);
+  background-color: var(--bg-primary);
+}
+
+.c-btn--filled-primary {
+  color: var(--bg-primary);
+  stroke: var(--bg-primary);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+}
+.c-btn--filled-primary:hover {
+  color: var(--color-primary);
+  stroke: var(--color-primary);
+  background-color: var(--bg-primary);
+  border: 2px solid var(--color-primary);
+}
+.c-btn--filled-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c-btn--filled-primary:disabled:hover {
+  color: var(--bg-primary);
+  stroke: var(--bg-primary);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+/* ===========================
+   Button Internal Components
+   =========================== */
+.c-btn__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border-radius: 2rem;
+}
+.c-btn__count--primary {
+  color: white;
+  background-color: var(--color-primary);
+  border: 3px solid white;
+}
+
+.c-btn__count--large {
+  font-size: var(--font-xsm);
+  font-weight: bold;
+}

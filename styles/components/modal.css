@@ -1,0 +1,40 @@
+/* =============================
+   Base Modal Structure
+   ============================= */
+.c-modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  cursor: default;
+}
+/* =============================
+   Modal Appearance Variations
+   ============================= */
+.c-modal--primary {
+  background-color: var(--bg-primary);
+}
+/* =============================
+   Modal Content 
+   ============================= */
+.c-modal--cart {
+  width: 320px;
+  left: 0;
+  top: calc(100% + 16px);
+}
+.c-modal--register {
+  width: 400px;
+  max-height: 90dvh;
+  overflow-y: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.c-modal--register::-webkit-scrollbar {
+  width: 0;
+}

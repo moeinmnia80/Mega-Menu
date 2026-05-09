@@ -1,0 +1,37 @@
+/* =============================
+   Base Settings Structure
+   ============================= */
+:root {
+  --color-primary: #2ec4b6;
+  --color-primary-light: #2ec4b50d;
+  --color-gray: #dcdcdc;
+  --color-black: #333;
+  /* --color-error: #c9184a; */
+  --color-error: #ff4d4f;
+  --color-success: #00c853;
+
+  --bg-primary: #fff;
+  --bg-gray: #f4f4f5;
+  --bg-success: rgba(0, 200, 83, 0.1);
+
+  --text-primary: #333;
+  --text-secondary: #2ec4b6;
+  --text-third: #667085;
+
+  --radius-xsm: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-2xl: 16px;
+
+  --font-xsm: 10px;
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+
+  --transition-light: all 120ms linear 80ms;
+  --transition-normal: all 200ms linear 80ms;
+  --transition-heavy: all 300ms linear 80ms;
+}

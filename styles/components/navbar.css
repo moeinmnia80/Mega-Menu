@@ -1,0 +1,73 @@
+/* =============================
+   Navbar Appearance Variations
+   ============================= */
+.c-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+
+  background-color: var(--bg-primary);
+}
+/* =====================================
+   Navbar Sections Appearance Variations
+   ===================================== */
+.c-navbar__wrapper {
+  display: flex;
+  align-items: center;
+}
+/* =============================
+   Navbar Right Section
+   ============================= */
+.c-navbar__logo {
+  width: 106px;
+  height: 24px;
+}
+.c-navbar__menu {
+  display: flex;
+  align-items: center;
+}
+.c-navbar__item {
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+
+  position: relative;
+}
+.c-navbar__item:hover .c-navbar__link {
+  color: var(--text-secondary);
+}
+.c-navbar__item:hover > .c-submenu__wrapper {
+  display: block;
+}
+.c-navbar__item svg {
+  width: 14px;
+  height: 14px;
+}
+.c-navbar__link {
+  display: flex;
+  align-items: center;
+}
+
+.c-navbar__arrow {
+  width: 14px;
+  height: 14px;
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+}
+.c-navbar__item:hover .c-navbar__arrow {
+  stroke: var(--text-secondary);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* =============================
+   Navbar Left Section
+   ============================= */

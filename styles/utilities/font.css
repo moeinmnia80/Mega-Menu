@@ -1,0 +1,15 @@
+.u-font-bold {
+  font-weight: bold;
+}
+.u-font-md {
+  font-size: var(--font-md);
+}
+.u-font-lg {
+  font-size: var(--font-lg);
+}
+.u-font-xl {
+  font-size: var(--font-xl);
+}
+.u-font-2xl {
+  font-size: var(--font-2xl);
+}

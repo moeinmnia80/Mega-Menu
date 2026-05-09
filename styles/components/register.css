@@ -1,0 +1,116 @@
+/* =============================
+   Base Register Structure
+   ============================= */
+.c-register {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.c-register__wrapper {
+  width: 100%;
+  position: relative;
+}
+/* ==============================
+   Register Appearance Variations
+   ============================== */
+
+/* =============================
+   Register Content 
+   ============================= */
+.c-register__logo {
+  align-self: center;
+  width: 106px;
+  height: 24px;
+}
+.c-register__input {
+  width: 100%;
+  height: 50px;
+}
+.c-register__label {
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+}
+.c-register__label--primary {
+  color: var(--text-third);
+  background-color: var(--bg-primary);
+}
+.c-register__input:focus + .c-register__label {
+  top: 0;
+  right: 15px;
+}
+/* if has value */
+.c-register__input.has-value + .c-register__label {
+  top: 0;
+  right: 15px;
+}
+.c-register__input:focus {
+  border-color: var(--color-primary);
+}
+.c-register__input:focus + .c-register__label {
+  color: var(--color-primary);
+}
+/* Valid State */
+.c-register__input.valid {
+  border-color: var(--color-success);
+}
+.c-register__input.valid + .c-register__label {
+  color: var(--color-success);
+}
+/* Invalid State */
+.c-register__input.invalid {
+  border-color: var(--color-error);
+}
+.c-register__input.invalid + .c-register__label {
+  color: var(--color-error);
+}
+/* Error message */
+.error {
+  max-height: 0;
+  opacity: 0;
+  color: var(--text-third);
+  font-size: var(--font-sm);
+  list-style-type: disc;
+  list-style-position: inside;
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+}
+.c-register__input.valid ~ .error {
+  color: var(--color-success);
+}
+.c-register__input.invalid ~ .error {
+  color: var(--color-error);
+}
+.c-register__input:focus ~ .error {
+  max-height: 100px;
+  opacity: 1;
+}
+/* just phone */
+.c-register__input-prefix {
+  height: 20px;
+  line-height: 20px;
+  color: var(--text-third);
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

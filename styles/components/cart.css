@@ -1,0 +1,79 @@
+/* =============================
+   Base Cart Structure
+   ============================= */
+.c-cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-cart-header__title {
+  font-size: var(--font-lg);
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.c-cart-header__txt {
+  font-size: var(--font-md);
+  color: var(--text-third);
+}
+.c-cart__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+.c-cart__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.c-cart__image {
+  width: 64px;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.c-cart__item--remove {
+  width: 20px;
+  height: 20px;
+  stroke: var(--text-primary);
+  cursor: pointer;
+  -webkit-transition: var(--transition-light);
+  -moz-transition: var(--transition-light);
+  -ms-transition: var(--transition-light);
+  -o-transition: var(--transition-light);
+  transition: var(--transition-light);
+}
+.c-cart__item--remove:hover {
+  stroke: var(--color-error);
+}
+.c-cart__empty > svg {
+  stroke: var(--text-primary);
+}
+.c-cart__empty > p {
+  font-family: "iransans light";
+}
+
+.c-cart__cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-cart__title {
+  font-weight: 300;
+}
+.c-cart__txt {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-third);
+  font-weight: 300;
+}
+.c-cart__txt > svg {
+  margin-left: 6px;
+}
+.c-cart--primary {
+  color: var(--text-primary);
+}
+.c-cart__price {
+  font-weight: bold;
+}

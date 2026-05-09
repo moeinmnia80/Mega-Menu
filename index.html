@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/app.css" />
+  </head>
+  <body>
+    <header class="l-header u-bg-primary">
+      <div class="o-container">
+        <nav class="c-navbar">
+          <div class="c-navbar__wrapper">
+            <a class="c-navbar__logo u-ml-24" href="#" title="Logo">
+              <img src="./images/logo.png" alt="Logo" />
+            </a>
+            <ul class="c-navbar__menu">
+              <li class="c-navbar__item u-ml-24">
+                <a href="" class="c-navbar__link">صفحه اصلی</a>
+              </li>
+              <li class="c-navbar__item u-ml-24" id="submenu">
+                <a href="" class="c-navbar__link">
+                  محصولات
+                  <svg
+                    class="c-navbar__arrow u-mr-6 u-stroke-primary"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <div class="c-submenu__wrapper u-overflow-hidden u-radius-b-sm">
+                  <div class="c-submenu u-mt-28 u-border-t u-border-gray">
+                    <ul class="c-submenu__menu u-bg-gray">
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-1"
+                      >
+                        کفش مردانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-2"
+                      >
+                        لباس های مردانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-3"
+                      >
+                        کفش زنانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-4"
+                      >
+                        پالتو، بارانی و کاپشن مردانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-5"
+                      >
+                        کیف مردانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                      <li
+                        class="c-submenu__tab u-pv-12 u-ph-20 u-font-lg"
+                        data-target="list-item-6"
+                      >
+                        اکسسوری زنانه
+                        <svg
+                          class="u-stroke-primary -u-rotate-90"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="c-submenu__list">
+                      <div class="c-submenu__item u-font-md" id="list-item-1">
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کفش اسپرت مردانه
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          صندل مردانه
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          بوت مردانه
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کفش کالج مردانه
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          دمپایی مردانه
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          نیم بوت مردانه مردانه
+                        </a>
+                      </div>
+                      <div class="c-submenu__item u-font-md" id="list-item-2">
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          تی‌شرت و پولوشرت
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          پیراهن
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          هودی و سویشرت
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          ژاکت و پلیور
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          شلوار جین
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          شلوار کتان و پارچه‌ای
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          شلوارک
+                        </a>
+                        <a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          شلوارهای اسلش و ورزشی </a
+                        ><a
+                          href="#"
+                          class="c-submenu__link u-pv-12 u-ph-20 text-"
+                        >
+                          کت تک و بلیزر
+                        </a>
+                      </div>
+                      <div class="c-submenu__item u-font-md" id="list-item-3">
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کتانی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          فش‌های رسمی و مجلسی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          صندل
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          بوت و نیم‌بوت
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کفش ورزشی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کفش راحتی خانگی
+                        </a>
+                      </div>
+                      <div class="c-submenu__item u-font-md" id="list-item-4">
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          پالتو رسمی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          پالتو نیمه‌رسمی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          پالتو زمستانی سنگین
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          بارانی کلاسیک
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          بارانی اسپرت
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          بارانی فنی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کاپشن زمستانی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کاپشن اسپرت
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کاپشن چرمی و جین
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کاپشن فنی و ورزشی
+                        </a>
+                      </div>
+                      <div class="c-submenu__item u-font-md" id="list-item-5">
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کیف‌های دستی و اداری
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کیف‌های دوشی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کوله‌پشتی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کیف‌های سفری
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کیف‌های کوچک
+                        </a>
+                      </div>
+                      <div class="c-submenu__item u-font-md" id="list-item-6">
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کیف
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          جواهرات و زیورآلات
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          ساعت
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          عینک
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          شال و روسری
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          اکسسوری مو
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          کمربند
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          دستکش و پوشیدنی های فصلی
+                        </a>
+                        <a href="#" class="c-submenu__link u-pv-12 u-ph-20">
+                          اکسسوری‌های کوچک
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="c-navbar__item u-ml-24">
+                <a href="" class="c-navbar__link">بلاگ</a>
+              </li>
+              <li class="c-navbar__item u-ml-24">
+                <a href="" class="c-navbar__link">درباره ما</a>
+              </li>
+              <li class="c-navbar__item">
+                <a href="" class="c-navbar__link">تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-navbar__wrapper">
+            <div class="c-cover__wrapper u-ml-16">
+              <a
+                href="#"
+                class="c-btn c-btn--outline-gray u-border u-border-gray u-radius-md"
+                id="cart"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.39999 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.50999C3.99999 22 3.23999 19.99 3.53999 17.53L4.44 10.03C4.66 8.09 4.99999 6.5 8.39999 6.5Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.41 17.03H8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span
+                  class="c-btn__count c-btn__count--primary c-btn__count--large"
+                >
+                  0
+                </span>
+              </a>
+              <div
+                class="c-modal c-modal--primary c-modal--cart u-radius-lg u-p-20 u-d-none u-select-none"
+              >
+                <div class="c-cart-header u-border-b u-border-gray u-pb-16">
+                  <h3 class="c-cart-header__title">سبد خرید من</h3>
+                  <p class="c-cart-header__txt">
+                    <span class="c-cart__count">0</span>
+                    مورد
+                  </p>
+                </div>
+                <div class="c-cart__list u-border-b u-border-gray u-pv-12">
+                  <div class="c-cart__item">
+                    <img
+                      src="./images/p-1.png"
+                      alt="تیشرت بهاره 1405"
+                      class="c-cart__image"
+                    />
+                    <div class="c-cart__description">
+                      <h4 class="c-cart__title u-mb-8">
+                        پولوشرت آستین کوتاه زنانه
+                      </h4>
+                      <p class="c-cart__txt">
+                        <span class="c-cart__price u-ml-4">2500000</span>
+                        تومـــــان
+                      </p>
+                    </div>
+                    <svg
+                      class="c-cart__item--remove"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.9 2H9.10001C8.42001 2 7.46 2.4 6.98 2.88L2.88 6.98001C2.4 7.46001 2 8.42001 2 9.10001V14.9C2 15.58 2.4 16.54 2.88 17.02L6.98 21.12C7.46 21.6 8.42001 22 9.10001 22H14.9C15.58 22 16.54 21.6 17.02 21.12L21.12 17.02C21.6 16.54 22 15.58 22 14.9V9.10001C22 8.42001 21.6 7.46001 21.12 6.98001L17.02 2.88C16.54 2.4 15.58 2 14.9 2Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 15.5L15.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.5 15.5L8.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="c-cart__item">
+                    <img
+                      src="./images/p-2.png"
+                      alt="تیشرت بهاره 1405"
+                      class="c-cart__image"
+                    />
+                    <div class="c-cart__description">
+                      <h4 class="c-cart__title u-mb-8">
+                        پولوشرت آستین کوتاه زنانه
+                      </h4>
+                      <p class="c-cart__txt">
+                        <span class="c-cart__price u-ml-4">2500000</span>
+                        تومـــــان
+                      </p>
+                    </div>
+                    <svg
+                      class="c-cart__item--remove"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.9 2H9.10001C8.42001 2 7.46 2.4 6.98 2.88L2.88 6.98001C2.4 7.46001 2 8.42001 2 9.10001V14.9C2 15.58 2.4 16.54 2.88 17.02L6.98 21.12C7.46 21.6 8.42001 22 9.10001 22H14.9C15.58 22 16.54 21.6 17.02 21.12L21.12 17.02C21.6 16.54 22 15.58 22 14.9V9.10001C22 8.42001 21.6 7.46001 21.12 6.98001L17.02 2.88C16.54 2.4 15.58 2 14.9 2Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 15.5L15.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.5 15.5L8.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="c-cart__item">
+                    <img
+                      src="./images/p-3.png"
+                      alt="تیشرت بهاره 1405"
+                      class="c-cart__image"
+                    />
+                    <div class="c-cart__description">
+                      <h4 class="c-cart__title u-mb-8">
+                        پولوشرت آستین کوتاه زنانه
+                      </h4>
+                      <p class="c-cart__txt">
+                        <span class="c-cart__price u-ml-4">2500000</span>
+                        تومـــــان
+                      </p>
+                    </div>
+                    <svg
+                      class="c-cart__item--remove"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.9 2H9.10001C8.42001 2 7.46 2.4 6.98 2.88L2.88 6.98001C2.4 7.46001 2 8.42001 2 9.10001V14.9C2 15.58 2.4 16.54 2.88 17.02L6.98 21.12C7.46 21.6 8.42001 22 9.10001 22H14.9C15.58 22 16.54 21.6 17.02 21.12L21.12 17.02C21.6 16.54 22 15.58 22 14.9V9.10001C22 8.42001 21.6 7.46001 21.12 6.98001L17.02 2.88C16.54 2.4 15.58 2 14.9 2Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 15.5L15.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.5 15.5L8.5 8.5"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="c-cart__empty u-text-center u-d-none">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.34"
+                        d="M15.9965 12H16.0054"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.34"
+                        d="M11.9945 12H12.0035"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.34"
+                        d="M7.99451 12H8.00349"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <h4 class="c-cart__title u-mv-8">سبد خرید شما خالی است</h4>
+                    <p class="c-cart__txt">
+                      لطفا محصولات مورد نظر خود را انتخاب و به سبد خرید اضافه
+                      کنید.
+                    </p>
+                  </div>
+                </div>
+                <div class="c-cart__cost u-pv-20">
+                  <p class="c-cart__txt c-cart--primary u-font-bold">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.3009 7.91998V13.07C19.3009 16.15 17.5409 17.47 14.9009 17.47H6.11093C5.66093 17.47 5.23093 17.43 4.83093 17.34C4.58093 17.3 4.34094 17.23 4.12094 17.15C2.62094 16.59 1.71094 15.29 1.71094 13.07V7.91998C1.71094 4.83998 3.47093 3.52002 6.11093 3.52002H14.9009C17.1409 3.52002 18.7509 4.47001 19.1809 6.64001C19.2509 7.04001 19.3009 7.44998 19.3009 7.91998Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M22.3001 10.9201V16.0701C22.3001 19.1501 20.5401 20.4701 17.9001 20.4701H9.11008C8.37008 20.4701 7.70009 20.3701 7.12009 20.1501C5.93009 19.7101 5.12008 18.8001 4.83008 17.3401C5.23008 17.4301 5.66008 17.4701 6.11008 17.4701H14.9001C17.5401 17.4701 19.3001 16.1501 19.3001 13.0701V7.9201C19.3001 7.4501 19.2601 7.03014 19.1801 6.64014C21.0801 7.04014 22.3001 8.38011 22.3001 10.9201Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.4994 13.1399C11.9574 13.1399 13.1394 11.9579 13.1394 10.4999C13.1394 9.04185 11.9574 7.85986 10.4994 7.85986C9.04136 7.85986 7.85938 9.04185 7.85938 10.4999C7.85938 11.9579 9.04136 13.1399 10.4994 13.1399Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M4.7793 8.2998V12.6998"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M16.2207 8.2998V12.6998"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    مجموع هزینه ها:
+                  </p>
+                  <div id="cart-cost" class="c-cart__price"></div>
+                </div>
+                <button
+                  class="c-btn c-btn--filled-primary u-justify-center u-radius-md"
+                  id="cart-submit"
+                  type="button"
+                >
+                  تسویه حساب
+                  <svg
+                    class="u-mr-8"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.57 5.93018L3.5 12.0002L9.57 18.0702"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M20.4999 12H3.66992"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="c-cover c-cover--appearance c-cover--cart u-d-none"
+              ></div>
+            </div>
+            <div class="c-cover__wrapper">
+              <a
+                href="#"
+                class="c-btn c-btn--outline-primary u-border u-border-primary u-radius-md"
+                id="register"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="c-btn__txt">ورود | عضویت</span>
+              </a>
+              <div
+                class="c-modal c-modal--primary c-modal--register u-radius-lg u-ph-40 u-pv-20 u-d-none"
+              >
+                <form action="#" class="c-register">
+                  <div class="c-register__logo u-mb-12">
+                    <img src="./images/logo.png" alt="LOGO" />
+                  </div>
+                  <!-- <svg
+                      id="register-close-btn"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <g opacity="0.4">
+                        <path
+                          d="M9.16992 14.8299L14.8299 9.16992"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14.8299 14.8299L9.16992 9.16992"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg> -->
+                  <div class="c-register__wrapper u-mt-12">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="c-register__input u-border u-border-gray u-radius-xsm u-ph-20"
+                      required
+                      autocomplete="on"
+                    />
+                    <label
+                      for="name"
+                      class="c-register__label c-register__label--primary u-select-none u-ph-8"
+                      >نام و نام خانوادگی</label
+                    >
+                    <ul class="error u-mt-12">
+                      <li>این فیلد الزامی است.</li>
+                    </ul>
+                  </div>
+                  <div class="c-register__wrapper u-mt-12">
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      class="c-register__input u-border u-border-gray u-radius-xsm u-ph-20"
+                      required
+                    />
+                    <label
+                      for="username"
+                      class="c-register__label c-register__label--primary u-select-none u-ph-8"
+                      >نام کاربری
+                    </label>
+                    <ul class="error u-mt-12">
+                      <li>لطفا نام کاربری خود را ورود کنید.</li>
+                      <li>بین ۳ تا ۲۰ کاراکتر</li>
+                      <li>باید با حرف انگلیسی شروع شود.</li>
+                      <li>فقط حروف انگلیسی، عدد، _ و -</li>
+                      <li>کاراکتر فارسی یا فاصله مجاز نیست.</li>
+                    </ul>
+                  </div>
+                  <div class="c-register__wrapper u-mt-12">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="c-register__input u-border u-border-gray u-radius-xsm u-ph-20"
+                      required
+                    />
+                    <label
+                      for="email"
+                      class="c-register__label c-register__label--primary u-select-none u-ph-8"
+                      >ایمیل
+                    </label>
+                    <ul class="error u-mt-12">
+                      <li>این فیلد الزامی است.</li>
+                    </ul>
+                  </div>
+                  <div class="c-register__wrapper u-mt-12">
+                    <span
+                      class="c-register__input-prefix u-border-r u-border-gray u-pr-8"
+                      >۹۸+</span
+                    >
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      class="c-register__input u-border u-border-gray u-radius-xsm u-pr-20 u-pl-50"
+                      minlength="10"
+                      maxlength="10"
+                      inputmode="numeric"
+                      autocomplete="tel"
+                    />
+                    <label
+                      for="phone"
+                      class="c-register__label c-register__label--primary u-select-none u-ph-8"
+                      >تلفن همراه
+                    </label>
+                    <ul class="error u-mt-12">
+                      <li>لطفا شماره موبایل خود را وارد کنید.</li>
+                      <li>شماره باید ۱۰ رقم باشد.</li>
+                      <li>شماره موبایل باید با ۹ شروع شود.</li>
+                      <li>فقط اعداد مجاز هستند.</li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="submit"
+                    id="register-submit"
+                    class="c-btn c-btn--filled-primary u-justify-center u-radius-xsm u-mt-12"
+                    disabled
+                  >
+                    ثبت نام
+                  </button>
+                </form>
+              </div>
+              <div
+                class="c-cover c-cover--appearance c-cover--register u-d-none"
+              ></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="c-hero">
+        <div class="o-container">
+          <div class="c-hero__content">
+            <div class="c-hero__image"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="c-cover c-cover--appearance c-cover--header u-d-none"></div>
+    <script src="./scripts/replaceNumber.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

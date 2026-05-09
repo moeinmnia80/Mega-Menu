@@ -1,0 +1,48 @@
+/* Margin Left */
+.u-ml-4 {
+  margin-left: 4px;
+}
+.u-ml-16 {
+  margin-left: 16px;
+}
+.u-ml-24 {
+  margin-left: 24px;
+}
+/* Margin right */
+.u-mr-6 {
+  margin-right: 6px;
+}
+.u-mr-8 {
+  margin-right: 8px;
+}
+/* Margin Bottom */
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+.u-mb-1 {
+  margin-bottom: 16px;
+}
+
+.u-mb-12 {
+  margin-bottom: 12px;
+}
+.u-mt-12 {
+  margin-top: 12px;
+}
+.u-mt-28 {
+  margin-top: 28px;
+}
+
+/* margin vertically */
+.u-mv-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.u-mv-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.u-mv-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

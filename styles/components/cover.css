@@ -1,0 +1,19 @@
+/* =============================
+   Base Cover Structure
+   ============================= */
+.c-cover__wrapper {
+  position: relative;
+}
+.c-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+/* =============================
+   Cover Appearance Variations
+   ============================= */
+.c-cover--appearance {
+  background-color: rgba(0, 0, 0, 20%);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}

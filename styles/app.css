@@ -1,0 +1,57 @@
+/* Settings  */
+@import "./settings/font.css";
+
+/* Generics */
+@import "./generics/normalize.css";
+@import "./generics/reset.css";
+@import "./generics/global.css";
+@import "./generics/box-sizing.css";
+
+/* Element */
+@import "./elements/img.css";
+@import "./elements/svg.css";
+@import "./elements/list.css";
+@import "./elements/link.css";
+@import "./elements/input.css";
+
+/* Objects */
+@import "./objects/grid.css";
+@import "./objects/header.css";
+
+/* Components */
+@import "./components/button.css";
+@import "./components/navbar.css";
+@import "./components/submenu.css";
+@import "./components/cover.css";
+@import "./components/modal.css";
+@import "./components/cart.css";
+@import "./components/register.css";
+
+/* Utilities */
+@import "./utilities/display.css";
+@import "./utilities/background.css";
+@import "./utilities/font.css";
+@import "./utilities/text.css";
+@import "./utilities/stroke.css";
+@import "./utilities/margin.css";
+@import "./utilities/padding.css";
+@import "./utilities/border.css";
+@import "./utilities/overflow.css";
+@import "./utilities/transform.css";
+@import "./utilities/z-index.css";
+
+.c-hero__content {
+  display: flex;
+  align-items: center;
+  height: 100dvh;
+}
+.c-hero__image {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-primary);
+  -webkit-border-radius: var(--radius-2xl);
+  -moz-border-radius: var(--radius-2xl);
+  -ms-border-radius: var(--radius-2xl);
+  -o-border-radius: var(--radius-2xl);
+  border-radius: var(--radius-2xl);
+}
