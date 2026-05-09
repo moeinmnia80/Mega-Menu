@@ -1,3 +1,6 @@
 .u-stroke-primary {
   stroke: var(--text-primary);
 }
+.u-stroke-secondary {
+  stroke: var(--text-secondary);
+}

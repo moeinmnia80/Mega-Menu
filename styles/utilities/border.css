@@ -65,3 +65,12 @@
   -o-border-radius: var(--radius-2xl);
   border-radius: var(--radius-2xl);
 }
+@container (max-width: 768px) {
+  .u-md-border-b {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  .u-md-border-none {
+    border: none;
+  }
+}

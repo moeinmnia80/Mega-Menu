@@ -2,16 +2,20 @@
 const header = document.querySelector(".l-header");
 const cart = document.getElementById("cart");
 const register = document.getElementById("register");
+const mobileMenu = document.querySelector(".c-navbar__menu");
 // covers =>
 const coverCart = document.querySelector(".c-cover--cart");
 const coverReg = document.querySelector(".c-cover--register");
 const coverHeader = document.querySelector(".c-cover--header");
+const coverMobileMenu = document.querySelector(".c-cover--mobile-menu");
 // modals =>
 const modalCart = document.querySelector(".c-modal--cart");
 const modalReg = document.querySelector(".c-modal--register");
 // Buttons => cart, register
 const cartBtn = document.getElementById("cart-submit");
 const regBtn = document.getElementById("register-submit");
+const openHamburgerMenuBtn = document.getElementById("open-hamburger-menu");
+const closeHamburgerMenuBtn = document.getElementById("close-hamburger-menu");
 // others
 const modalItems = document.querySelectorAll(".c-cart__item--remove");
 const emptyItem = document.querySelector(".c-cart__empty");
@@ -81,7 +85,14 @@ modalHandler({
     coverHeader.classList.toggle("u-d-none");
   },
 });
-
+modalHandler({
+  openEl: openHamburgerMenuBtn,
+  closeEl: closeHamburgerMenuBtn,
+  onToggle: () => {
+    coverMobileMenu.classList.toggle("u-d-none");
+    mobileMenu.classList.toggle("c-navbar__menu--show");
+  },
+});
 let isValid = {
   name: false,
   username: false,
@@ -126,25 +137,4 @@ inputs.forEach((input) => {
 
     regBtn.disabled = !Object.values(isValid).every(Boolean);
   });
-});
-// submenu
-function activate(tab) {
-  const targetId = tab.dataset.target;
-
-  submenuTabs.forEach((t) => t.classList.remove("is-active"));
-  submenuListItems.forEach((i) => i.classList.remove("u-d-grid"));
-
-  tab.classList.add("is-active");
-  document.getElementById(targetId)?.classList.add("u-d-grid");
-}
-submenuTabs.forEach((tab) => {
-  tab.addEventListener("mouseenter", () => activate(tab));
-});
-submenu.addEventListener("mouseleave", () => {
-  submenuTabs.forEach((tab) => tab.classList.remove("is-active"));
-  submenuListItems.forEach((item) => item.classList.remove("u-d-grid"));
-});
-submenu.addEventListener("mouseenter", () => {
-  submenuTabs[0].classList.add("is-active");
-  submenuListItems[0].classList.add("u-d-grid");
 });

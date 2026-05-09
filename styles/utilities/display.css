@@ -13,3 +13,12 @@
 .u-d-grid {
   display: grid;
 }
+
+@container (max-width: 768px) {
+  .u-md-d-flex {
+    display: flex;
+  }
+  .u-md-flex-col {
+    flex-direction: column;
+  }
+}

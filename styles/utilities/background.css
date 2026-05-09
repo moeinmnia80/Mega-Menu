@@ -4,3 +4,8 @@
 .u-bg-gray {
   background-color: var(--bg-gray);
 }
+@container (max-width: 768px) {
+  .u-md-bg-primary {
+    background-color: var(--bg-primary);
+  }
+}

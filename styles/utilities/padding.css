@@ -53,3 +53,11 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+@container (max-width: 768px) {
+  .u-md-p-20 {
+    padding: 20px;
+  }
+  .u-md-pb-20 {
+    padding-bottom: 20px;
+  }
+}

@@ -1,5 +1,14 @@
+/* =============================
+   Layout Header Appearance
+   ============================= */
 .l-header {
   width: 100%;
   position: fixed;
   top: 0;
+}
+/* =============================
+   Header Container
+   ============================= */
+.l-header {
+  container-type: inline-size;
 }

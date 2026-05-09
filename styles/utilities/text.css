@@ -1,7 +1,13 @@
 .u-text-center {
   text-align: center;
 }
+.u-text-right {
+  text-align: right;
+}
 .u-select-none {
   -webkit-user-select: none;
   user-select: none;
+}
+.u-indent-10 {
+  text-indent: 10px;
 }
