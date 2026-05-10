@@ -31,11 +31,8 @@
   -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
-.c-submenu__tab path {
-  stroke-width: 2;
-}
-.c-submenu__tab:hover {
-  background-color: var(--bg-primary);
+.c-submenu__tab svg {
+  transition: var(--transition-light);
 }
 .c-submenu__item {
   display: none;
@@ -44,12 +41,10 @@
   top: 0;
   bottom: 0;
 }
-.c-submenu__item--active {
-  max-height: 300px;
-}
-.c-submenu__wrapper:hover .c-submenu__tab {
-  background-color: var(--bg-primary);
-}
+/* ===================
+   Active, Hover, ...
+   =================== */
+
 /* =====================
    Submenu Media Queries
    ===================== */
@@ -61,6 +56,9 @@
     grid-auto-rows: 48px;
     white-space: nowrap;
   }
+  .c-submenu__wrapper:hover .c-submenu__tab {
+    background-color: var(--bg-primary);
+  }
 }
 @container (max-width: 768px) {
   .c-submenu__box {
@@ -68,14 +66,26 @@
     top: 0;
   }
   .c-submenu {
-    min-width: auto;
+    width: auto;
     height: auto;
+  }
+  .c-submenu__wrapper {
+    width: 100%;
+  }
+  .c-submenu__tab {
+    color: var(--text-third);
+  }
+  .c-submenu__wrapper:hover .c-submenu__tab {
+    color: var(--text-secondary) !important;
+  }
+  .c-submenu__wrapper.is-active .c-submenu__tab {
+    color: var(--text-secondary) !important;
   }
   .c-submenu__item {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 25px;
+    right: 0;
     max-height: 0;
     overflow: hidden;
     -webkit-transition: var(--transition-light);
@@ -84,15 +94,15 @@
     -o-transition: var(--transition-light);
     transition: var(--transition-light);
   }
-
-  .c-submenu__tab {
-    color: var(--text-third) !important;
-    padding-left: 0 !important;
+  .c-submenu__wrapper.is-active .c-submenu__item {
+    max-height: 300px;
   }
-  .c-submenu__tab:hover {
-    color: var(--text-secondary) !important;
-  }
-  .c-submenu__tab:hover > svg {
+  .c-submenu__wrapper:hover svg {
     stroke: var(--color-primary);
+    transform: rotate(-180deg) !important;
+  }
+  .c-submenu__wrapper.is-active svg {
+    stroke: var(--color-primary);
+    transform: rotate(-180deg) !important;
   }
 }

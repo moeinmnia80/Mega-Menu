@@ -4,6 +4,9 @@
 .u-d-flex {
   display: flex;
 }
+.u-d-block {
+  display: block;
+}
 .u-justify-center {
   justify-content: center;
 }
@@ -15,10 +18,16 @@
 }
 
 @container (max-width: 768px) {
+  .u-md-d-block {
+    display: block;
+  }
   .u-md-d-flex {
     display: flex;
   }
   .u-md-flex-col {
     flex-direction: column;
+  }
+  .u-md-justify-between {
+    justify-content: space-between;
   }
 }

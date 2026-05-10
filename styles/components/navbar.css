@@ -19,7 +19,7 @@
 }
 .c-navbar > svg {
   display: none;
-  stroke: var(--color-black);
+  cursor: pointer;
 }
 /* =============================
    Navbar Menu Section
@@ -67,6 +67,10 @@
   display: flex;
   align-items: center;
 }
+.c-navbar__link > svg {
+  width: 20px;
+  height: 20px;
+}
 .c-navbar__arrow {
   width: 14px;
   height: 14px;
@@ -86,24 +90,26 @@
   -o-transform: translateX(0) !important;
   transform: translateX(0) !important;
 }
-.c-navbar__item:hover .c-navbar__link {
-  color: var(--text-secondary);
-}
-.c-navbar__item:hover > .c-submenu__box {
-  display: block;
-}
-.c-navbar__item:hover .c-navbar__arrow {
-  stroke: var(--text-secondary);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+
 /* =============================
    Navbar Media Queries
    ============================= */
-
+@container (min-width: 768px) {
+  .c-navbar__item:hover > .c-submenu__box {
+    display: block;
+  }
+  .c-navbar__item:hover .c-navbar__link {
+    color: var(--text-secondary);
+  }
+  .c-navbar__item:hover .c-navbar__arrow {
+    stroke: var(--text-secondary);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
 @container (max-width: 768px) {
   .c-navbar > svg {
     display: block;
@@ -116,10 +122,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    -webkit-transform: translateX(260px);
-    -moz-transform: translateX(260px);
-    -ms-transform: translateX(260px);
-    -o-transform: translateX(260px);
     transform: translateX(260px);
     z-index: 10;
   }
@@ -129,6 +131,16 @@
   }
   .c-navbar__item {
     width: 100%;
+  }
+  .c-navbar__link {
+    justify-content: space-between;
+  }
+  .c-navbar__wrapper.is-active {
+    color: var(--text-secondary) !important;
+  }
+  .c-navbar__wrapper.is-active > svg {
+    stroke: var(--text-secondary);
+    transform: rotate(180deg);
   }
   .c-navbar__header {
     width: 100%;

@@ -22,10 +22,14 @@ const emptyItem = document.querySelector(".c-cart__empty");
 const inputs = modalReg.querySelectorAll("input");
 // submenu
 const submenu = document.getElementById("submenu");
+const submenuBox = document.querySelector(".c-submenu__box");
 const submenuTabs = document.querySelectorAll(".c-submenu__tab");
+const submenuWrapper = document.querySelectorAll(".c-submenu__wrapper");
 const submenuListItems = document.querySelectorAll(".c-submenu__item");
+// window
+let winWidth = window.innerWidth;
 
-// Funcs
+// Perform some actions on the desired element
 const modalHandler = ({
   openEl,
   closeEl,
@@ -40,7 +44,6 @@ const modalHandler = ({
   openEl?.addEventListener(openAction, toggle);
   closeEl?.addEventListener(closeAction, toggle);
 };
-
 // cart basket handle
 modalItems.forEach((item) => {
   item.addEventListener("click", () => {
@@ -81,6 +84,7 @@ modalHandler({
   openAction: "mouseenter",
   closeAction: "mouseleave",
   onToggle: () => {
+    if (window.innerWidth < 768) return;
     header.classList.toggle("u-z-index-10");
     coverHeader.classList.toggle("u-d-none");
   },
@@ -91,6 +95,17 @@ modalHandler({
   onToggle: () => {
     coverMobileMenu.classList.toggle("u-d-none");
     mobileMenu.classList.toggle("c-navbar__menu--show");
+  },
+});
+const navbarLink = submenu.children[0];
+modalHandler({
+  openEl: navbarLink,
+  closeEl: navbarLink,
+  onToggle: () => {
+    if (winWidth < 768) {
+      navbarLink.classList.toggle("is-active");
+      submenuBox.classList.toggle("u-d-block");
+    }
   },
 });
 let isValid = {
@@ -137,4 +152,18 @@ inputs.forEach((input) => {
 
     regBtn.disabled = !Object.values(isValid).every(Boolean);
   });
+});
+
+submenuTabs.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.parentElement.classList.toggle("is-active");
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (winWidth > 768) {
+    submenuBox.classList.remove("u-d-block");
+    coverMobileMenu.classList.add("u-d-none");
+    mobileMenu.classList.remove("c-navbar__menu--show");
+  }
 });

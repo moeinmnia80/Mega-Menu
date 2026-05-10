@@ -1,6 +1,9 @@
 .u-font-bold {
   font-weight: bold;
 }
+.u-font-light {
+  font-family: "yekanbakh light";
+}
 .u-font-md {
   font-size: var(--font-md);
 }
@@ -12,4 +15,12 @@
 }
 .u-font-2xl {
   font-size: var(--font-2xl);
+}
+@container (max-width: 768px) {
+  .u-md-font-light {
+    font-family: "yekanbakh light";
+  }
+  .u-md-font-md {
+    font-size: var(--font-md);
+  }
 }
