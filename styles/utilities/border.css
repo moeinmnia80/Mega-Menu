@@ -73,4 +73,7 @@
   .u-md-border-none {
     border: none;
   }
+  .u-md-radius-0 {
+    border-radius: 0;
+  }
 }

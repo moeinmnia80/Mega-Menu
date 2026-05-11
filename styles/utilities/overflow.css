@@ -1,3 +1,8 @@
 .u-overflow-hidden {
   overflow: hidden;
 }
+@container (max-width:768px) {
+  .u-md-overflow-y-auto {
+    overflow-y: auto;
+  }
+}

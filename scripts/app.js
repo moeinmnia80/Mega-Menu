@@ -60,16 +60,22 @@ modalItems.forEach((item) => {
     }
   });
 });
-// Open/Close modal => modalHandler
+// cart modal action => Open/Close
 modalHandler({
   openEl: cart,
   closeEl: coverCart,
   onToggle: () => {
-    cart.classList.toggle("u-z-index-5");
-    coverCart.classList.toggle("u-d-none");
-    modalCart.classList.toggle("u-d-none");
+    if (winWidth < 768) {
+      (coverCart.classList.toggle("u-d-none"),
+        modalCart.classList.toggle("u-md-translate-x-0"));
+    } else {
+      (cart.classList.toggle("u-z-index-5"),
+        coverCart.classList.toggle("u-d-none"),
+        modalCart.classList.toggle("u-d-none"));
+    }
   },
 });
+// modal || btn -- register action => click
 modalHandler({
   openEl: register,
   closeEl: coverReg,
@@ -78,6 +84,7 @@ modalHandler({
     modalReg.classList.toggle("u-d-none");
   },
 });
+// submenu hover action => mouseEnter/mouseLeave
 modalHandler({
   openEl: submenu,
   closeEl: submenu,
@@ -89,6 +96,7 @@ modalHandler({
     coverHeader.classList.toggle("u-d-none");
   },
 });
+// hamburger menu action => Open/Close
 modalHandler({
   openEl: openHamburgerMenuBtn,
   closeEl: closeHamburgerMenuBtn,
@@ -97,6 +105,11 @@ modalHandler({
     mobileMenu.classList.toggle("c-navbar__menu--show");
   },
 });
+coverMobileMenu.addEventListener("click", () => {
+  coverMobileMenu.classList.toggle("u-d-none");
+  mobileMenu.classList.toggle("c-navbar__menu--show");
+});
+// navbar mobile menu action =>
 const navbarLink = submenu.children[0];
 modalHandler({
   openEl: navbarLink,
@@ -114,7 +127,7 @@ let isValid = {
   phone: false,
   email: false,
 };
-// check validly form inputs
+// check inputs validly
 const validators = {
   name: (value) => /^[\u0600-\u06FFa-zA-Z‌ ]{3,20}$/.test(value),
   username: (value) =>
@@ -134,6 +147,7 @@ const validators = {
   },
   email: (value, input) => input.checkValidity(),
 };
+// set event Listener
 inputs.forEach((input) => {
   input.addEventListener("input", () => {
     const value = input.value;

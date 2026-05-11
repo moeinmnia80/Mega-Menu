@@ -1,0 +1,8 @@
+.u-w-full {
+  width: 100%;
+}
+@container (max-width:768px) {
+  .u-md-w-full {
+    width: 100%;
+  }
+}

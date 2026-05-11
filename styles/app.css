@@ -29,6 +29,7 @@
 
 /* Utilities */
 @import "./utilities/display.css";
+@import "./utilities/dimension.css";
 @import "./utilities/background.css";
 @import "./utilities/font.css";
 @import "./utilities/text.css";

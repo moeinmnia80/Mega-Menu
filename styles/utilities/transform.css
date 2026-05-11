@@ -5,3 +5,11 @@
   -o-transform: rotate(-90deg) !important;
   transform: rotate(-90deg) !important;
 }
+@container (max-width: 768px) {
+  .u-md-translate-x-0 {
+    transform: translateX(0);
+  }
+  .-u-md-translate-x-10 {
+    transform: translateX(-10px);
+  }
+}

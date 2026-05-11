@@ -7,6 +7,9 @@
 .u-d-block {
   display: block;
 }
+.u-flex-col {
+  flex-direction: column;
+}
 .u-justify-center {
   justify-content: center;
 }
@@ -18,6 +21,9 @@
 }
 
 @container (max-width: 768px) {
+  .u-md-d-none {
+    display: none;
+  }
   .u-md-d-block {
     display: block;
   }

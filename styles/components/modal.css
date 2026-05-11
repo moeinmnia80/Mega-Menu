@@ -38,3 +38,13 @@
 .c-modal--register::-webkit-scrollbar {
   width: 0;
 }
+@container (max-width:768px) {
+  .c-modal--cart {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transform: translateX(-280px);
+    transition: var(--transition-light);
+  }
+}
