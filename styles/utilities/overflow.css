@@ -1,7 +1,7 @@
 .u-overflow-hidden {
   overflow: hidden;
 }
-@container (max-width:768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-md-overflow-y-auto {
     overflow-y: auto;
   }

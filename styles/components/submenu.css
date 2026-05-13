@@ -25,10 +25,6 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  -webkit-transition: var(--transition-light);
-  -moz-transition: var(--transition-light);
-  -ms-transition: var(--transition-light);
-  -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
 .c-submenu__tab svg {
@@ -41,14 +37,11 @@
   top: 0;
   bottom: 0;
 }
-/* ===================
-   Active, Hover, ...
-   =================== */
 
 /* =====================
    Submenu Media Queries
    ===================== */
-@container (min-width:768px) {
+@media (aspect-ratio > 1/1) and (pointer: fine) and (hover: hover) {
   .c-submenu__wrapper:hover .c-submenu__item {
     display: grid;
     grid-template-rows: repeat(6, 48px);
@@ -60,7 +53,7 @@
     background-color: var(--bg-primary);
   }
 }
-@container (max-width: 768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .c-submenu__box {
     position: relative;
     top: 0;
@@ -75,12 +68,6 @@
   .c-submenu__tab {
     color: var(--text-third);
   }
-  .c-submenu__wrapper:hover .c-submenu__tab {
-    color: var(--text-secondary) !important;
-  }
-  .c-submenu__wrapper.is-active .c-submenu__tab {
-    color: var(--text-secondary) !important;
-  }
   .c-submenu__item {
     display: flex;
     flex-direction: column;
@@ -88,21 +75,12 @@
     right: 0;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: var(--transition-light);
-    -moz-transition: var(--transition-light);
-    -ms-transition: var(--transition-light);
-    -o-transition: var(--transition-light);
     transition: var(--transition-light);
   }
   .c-submenu__wrapper.is-active .c-submenu__item {
-    max-height: 300px;
-  }
-  .c-submenu__wrapper:hover svg {
-    stroke: var(--color-primary);
-    transform: rotate(-180deg) !important;
+    max-height: 450px;
   }
   .c-submenu__wrapper.is-active svg {
-    stroke: var(--color-primary);
     transform: rotate(-180deg) !important;
   }
 }

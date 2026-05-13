@@ -27,7 +27,10 @@ const submenuTabs = document.querySelectorAll(".c-submenu__tab");
 const submenuWrapper = document.querySelectorAll(".c-submenu__wrapper");
 const submenuListItems = document.querySelectorAll(".c-submenu__item");
 // window
-let winWidth = window.innerWidth;
+
+let isCoarsePointer = window.matchMedia(
+  "(aspect-ratio < 1/1), (pointer: coarse)",
+).matches;
 
 // Perform some actions on the desired element
 const modalHandler = ({
@@ -65,14 +68,12 @@ modalHandler({
   openEl: cart,
   closeEl: coverCart,
   onToggle: () => {
-    if (winWidth < 768) {
-      (coverCart.classList.toggle("u-d-none"),
-        modalCart.classList.toggle("u-md-translate-x-0"));
-    } else {
-      (cart.classList.toggle("u-z-index-5"),
+    isCoarsePointer
+      ? (coverCart.classList.toggle("u-d-none"),
+        modalCart.classList.toggle("u-md-translate-x-0"))
+      : (cart.classList.toggle("u-z-index-5"),
         coverCart.classList.toggle("u-d-none"),
         modalCart.classList.toggle("u-d-none"));
-    }
   },
 });
 // modal || btn -- register action => click
@@ -91,9 +92,9 @@ modalHandler({
   openAction: "mouseenter",
   closeAction: "mouseleave",
   onToggle: () => {
-    if (window.innerWidth < 768) return;
-    header.classList.toggle("u-z-index-10");
-    coverHeader.classList.toggle("u-d-none");
+    !isCoarsePointer &&
+      (header.classList.toggle("u-z-index-10"),
+      coverHeader.classList.toggle("u-d-none"));
   },
 });
 // hamburger menu action => Open/Close
@@ -111,14 +112,14 @@ coverMobileMenu.addEventListener("click", () => {
 });
 // navbar mobile menu action =>
 const navbarLink = submenu.children[0];
+
 modalHandler({
   openEl: navbarLink,
   closeEl: navbarLink,
   onToggle: () => {
-    if (winWidth < 768) {
-      navbarLink.classList.toggle("is-active");
-      submenuBox.classList.toggle("u-d-block");
-    }
+    isCoarsePointer &&
+      (navbarLink.classList.toggle("is-active"),
+      submenuBox.classList.toggle("u-d-block"));
   },
 });
 let isValid = {
@@ -175,9 +176,11 @@ submenuTabs.forEach((item) => {
 });
 
 window.addEventListener("resize", () => {
-  if (winWidth > 768) {
-    submenuBox.classList.remove("u-d-block");
-    coverMobileMenu.classList.add("u-d-none");
-    mobileMenu.classList.remove("c-navbar__menu--show");
-  }
+  isCoarsePointer = window.matchMedia(
+    "(aspect-ratio < 1/1), (pointer: coarse)",
+  ).matches;
+  !isCoarsePointer &&
+    (submenuBox.classList.remove("u-d-block"),
+    coverMobileMenu.classList.add("u-d-none"),
+    mobileMenu.classList.remove("c-navbar__menu--show"));
 });

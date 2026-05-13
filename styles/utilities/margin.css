@@ -52,7 +52,7 @@
   margin-top: 16px;
   margin-bottom: 16px;
 }
-@container (max-width: 768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-md-mt-0 {
     margin-top: 0;
   }

@@ -94,7 +94,7 @@
 /* =============================
    Navbar Media Queries
    ============================= */
-@container (min-width: 768px) {
+@media (aspect-ratio > 1/1) and (pointer: fine) and (hover: hover) {
   .c-navbar__item:hover > .c-submenu__box {
     display: block;
   }
@@ -103,14 +103,10 @@
   }
   .c-navbar__item:hover .c-navbar__arrow {
     stroke: var(--text-secondary);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
-@container (max-width: 768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .c-navbar > svg {
     display: block;
   }
@@ -138,11 +134,7 @@
   .c-navbar__link {
     justify-content: space-between;
   }
-  .c-navbar__wrapper.is-active {
-    color: var(--text-secondary) !important;
-  }
   .c-navbar__wrapper.is-active > svg {
-    stroke: var(--text-secondary);
     transform: rotate(180deg);
   }
   .c-navbar__header {

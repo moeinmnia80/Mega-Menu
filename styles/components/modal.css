@@ -38,7 +38,7 @@
 .c-modal--register::-webkit-scrollbar {
   width: 0;
 }
-@container (max-width:768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .c-modal--cart {
     width: 280px;
     height: 100%;

@@ -4,7 +4,7 @@
 .u-bg-gray {
   background-color: var(--bg-gray);
 }
-@container (max-width: 768px) {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-md-bg-primary {
     background-color: var(--bg-primary);
   }

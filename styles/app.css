@@ -6,6 +6,7 @@
 @import "./generics/reset.css";
 @import "./generics/global.css";
 @import "./generics/box-sizing.css";
+@import "./generics/scrollbar.css";
 
 /* Element */
 @import "./elements/img.css";
