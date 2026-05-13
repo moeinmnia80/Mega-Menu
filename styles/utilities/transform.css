@@ -2,10 +2,10 @@
   transform: rotate(-90deg) !important;
 }
 @media (aspect-ratio < 1/1), (pointer: coarse) {
-  .u-md-translate-x-0 {
+  .u-touch-translate-x-0 {
     transform: translateX(0);
   }
-  .-u-md-translate-x-10 {
+  .-u-touch-translate-x-10 {
     transform: translateX(-10px);
   }
 }

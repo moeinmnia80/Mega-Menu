@@ -5,7 +5,7 @@
   background-color: var(--bg-gray);
 }
 @media (aspect-ratio < 1/1), (pointer: coarse) {
-  .u-md-bg-primary {
-    background-color: var(--bg-primary);
+  .u-touch-bg-primary {
+    background-color: var(--bg-primary) !important;
   }
 }

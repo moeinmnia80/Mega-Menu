@@ -21,19 +21,19 @@
 }
 
 @media (aspect-ratio < 1/1), (pointer: coarse) {
-  .u-md-d-none {
+  .u-touch-d-none {
     display: none;
   }
-  .u-md-d-block {
+  .u-touch-d-block {
     display: block;
   }
-  .u-md-d-flex {
+  .u-touch-d-flex {
     display: flex;
   }
-  .u-md-flex-col {
+  .u-touch-flex-col {
     flex-direction: column;
   }
-  .u-md-justify-between {
+  .u-touch-justify-between {
     justify-content: space-between;
   }
 }

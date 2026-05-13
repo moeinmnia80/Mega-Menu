@@ -1,8 +1,8 @@
 .u-w-full {
   width: 100%;
 }
-@container (max-width:768px) {
-  .u-md-w-full {
+@media (aspect-ratio < 1/1), (pointer: coarse) {
+  .u-touch-w-full {
     width: 100%;
   }
 }

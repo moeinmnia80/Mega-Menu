@@ -70,7 +70,7 @@ modalHandler({
   onToggle: () => {
     isCoarsePointer
       ? (coverCart.classList.toggle("u-d-none"),
-        modalCart.classList.toggle("u-md-translate-x-0"))
+        modalCart.classList.toggle("u-touch-translate-x-0"))
       : (cart.classList.toggle("u-z-index-5"),
         coverCart.classList.toggle("u-d-none"),
         modalCart.classList.toggle("u-d-none"));

@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 @media (aspect-ratio < 1/1), (pointer: coarse) {
-  .u-md-overflow-y-auto {
+  .u-touch-overflow-y-auto {
     overflow-y: auto;
   }
 }
