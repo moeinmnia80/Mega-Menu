@@ -20,6 +20,8 @@
 .c-navbar > svg {
   display: none;
   cursor: pointer;
+  width: 48px;
+  height: 48px;
 }
 /* =============================
    Navbar Menu Section

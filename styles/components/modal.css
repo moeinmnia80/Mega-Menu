@@ -23,7 +23,8 @@
   top: calc(100% + 16px);
 }
 .c-modal--register {
-  width: 400px;
+  width: 90vw;
+  max-width: 380px;
   max-height: 90dvh;
   overflow-y: auto;
   position: fixed;

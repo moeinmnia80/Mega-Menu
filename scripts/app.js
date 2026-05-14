@@ -1,7 +1,7 @@
 // elements => header, cart, register
 const header = document.querySelector(".l-header");
 const cart = document.getElementById("cart");
-const register = document.getElementById("register");
+const register = document.querySelectorAll(".c-btn--register");
 const mobileMenu = document.querySelector(".c-navbar__menu");
 // covers =>
 const coverCart = document.querySelector(".c-cover--cart");
@@ -77,14 +77,22 @@ modalHandler({
   },
 });
 // modal || btn -- register action => click
-modalHandler({
-  openEl: register,
-  closeEl: coverReg,
-  onToggle: () => {
-    coverReg.classList.toggle("u-d-none");
-    modalReg.classList.toggle("u-d-none");
-  },
+
+register.forEach((item, index) => {
+  modalHandler({
+    openEl: item,
+    closeEl: index === 0 ? coverReg : null,
+    onToggle: () => {
+      !coverMobileMenu.classList.contains("u-d-none") &&
+        (coverMobileMenu.classList.toggle("u-d-none"),
+        mobileMenu.classList.toggle("c-navbar__menu--show"));
+
+      coverReg.classList.toggle("u-d-none");
+      modalReg.classList.toggle("u-d-none");
+    },
+  });
 });
+
 // submenu hover action => mouseEnter/mouseLeave
 modalHandler({
   openEl: submenu,
