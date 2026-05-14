@@ -1,3 +1,6 @@
+/* =================
+   Border Utilities
+   ================= */
 .u-border {
   border: 1px solid transparent;
 }
@@ -20,7 +23,9 @@
 .u-border-gray {
   border-color: var(--color-gray);
 }
-/* radius */
+/* ========================
+   Border-Radius Utilities
+   ======================== */
 .u-radius-xsm {
   border-radius: var(--radius-xsm);
 }
@@ -43,6 +48,10 @@
 .u-radius-2xl {
   border-radius: var(--radius-2xl);
 }
+/* ===========================
+   Touch Border Utilities
+   (Mobile / Coarse Pointer)
+   =========================== */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-border-b {
     border-bottom-width: 1px;

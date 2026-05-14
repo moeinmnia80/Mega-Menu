@@ -1,6 +1,6 @@
-/* =============================
-   Navbar Appearance Variations
-   ============================= */
+/* ======================
+   Base Navbar Structure
+   ====================== */
 .c-navbar {
   display: flex;
   align-items: center;
@@ -9,9 +9,9 @@
 
   background-color: var(--bg-primary);
 }
-/* =====================================
-   Navbar Sections Appearance Variations
-   ===================================== */
+/* ============================
+   Navbar Sections Appearance
+   ============================ */
 .c-navbar__wrapper {
   display: flex;
   align-items: center;

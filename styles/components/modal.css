@@ -32,6 +32,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+/* =============================
+   Modal Media Queries
+   ============================= */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .c-modal--cart {
     width: 280px;

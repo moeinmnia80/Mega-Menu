@@ -1,3 +1,6 @@
+/* ==================
+   Desktop Utilities
+   ================== */
 .u-d-none {
   display: none;
 }
@@ -19,7 +22,10 @@
 .u-d-grid {
   display: grid;
 }
-
+/* ==========================
+   Touch Desktop Utilities
+   (Mobile / Coarse Pointer)
+   ========================== */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-d-none {
     display: none;

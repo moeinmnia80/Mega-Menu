@@ -1,3 +1,6 @@
+/* =================
+   Stroke Utilities
+   ================= */
 .u-stroke-primary {
   stroke: var(--text-primary);
 }

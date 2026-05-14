@@ -1,6 +1,6 @@
-/* =================
-   Submenu Structure
-   ================= */
+/* =======================
+   Base Submenu Structure
+   ======================= */
 .c-submenu__box {
   display: none;
   position: absolute;

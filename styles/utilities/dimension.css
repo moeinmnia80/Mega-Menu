@@ -1,6 +1,13 @@
+/* ====================
+   Dimension Utilities
+   ==================== */
 .u-w-full {
   width: 100%;
 }
+/* ===========================
+   Touch Dimension Utilities
+   (Mobile / Coarse Pointer)
+   =========================== */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-w-full {
     width: 100%;

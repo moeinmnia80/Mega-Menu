@@ -1,9 +1,16 @@
+/* =====================
+   Background Utilities
+   ===================== */
 .u-bg-primary {
   background-color: var(--bg-primary);
 }
 .u-bg-gray {
   background-color: var(--bg-gray);
 }
+/* =============================
+   Touch Background Utilities
+   (Mobile / Coarse Pointer)
+   ============================= */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-bg-primary {
     background-color: var(--bg-primary) !important;

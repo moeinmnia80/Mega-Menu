@@ -1,6 +1,13 @@
+/* =============================
+   Overflow Utilities
+   ============================= */
 .u-overflow-hidden {
   overflow: hidden;
 }
+/* =============================
+   Touch Overflow Utilities
+   (Mobile / Coarse Pointer)
+   ============================= */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-overflow-y-auto {
     overflow-y: auto;

@@ -1,0 +1,18 @@
+/* ====================
+   Base Hero Structure
+   ==================== */
+.c-hero__content {
+  display: flex;
+  align-items: center;
+  height: 100dvh;
+}
+.c-hero__image {
+  width: 100%;
+  height: 50vh;
+}
+.c-hero__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}

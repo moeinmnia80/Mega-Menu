@@ -1,6 +1,13 @@
+/* ====================
+   Transform Utilities
+   ==================== */
 .-u-rotate-90 {
   transform: rotate(-90deg) !important;
 }
+/* =============================
+   Touch Transform Utilities
+   (Mobile / Coarse Pointer)
+   ============================= */
 @media (aspect-ratio < 1/1), (pointer: coarse) {
   .u-touch-translate-x-0 {
     transform: translateX(0);
