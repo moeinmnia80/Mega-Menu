@@ -30,10 +30,6 @@
   stroke: var(--bg-primary);
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
-  -webkit-transition: var(--transition-light);
-  -moz-transition: var(--transition-light);
-  -ms-transition: var(--transition-light);
-  -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
 .c-btn--filled-primary:hover {
@@ -64,10 +60,6 @@
   position: absolute;
   right: -0.5rem;
   top: -0.5rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
   border-radius: 2rem;
 }
 .c-btn__count--primary {

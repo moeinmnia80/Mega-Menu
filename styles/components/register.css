@@ -32,15 +32,7 @@
   position: absolute;
   right: 25px;
   top: 25px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: var(--transition-light);
-  -moz-transition: var(--transition-light);
-  -ms-transition: var(--transition-light);
-  -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
 .c-register__label--primary {
@@ -84,10 +76,6 @@
   font-size: var(--font-sm);
   list-style-type: disc;
   list-style-position: inside;
-  -webkit-transition: var(--transition-light);
-  -moz-transition: var(--transition-light);
-  -ms-transition: var(--transition-light);
-  -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
 .c-register__input.valid ~ .error {
@@ -108,9 +96,5 @@
   position: absolute;
   top: 25px;
   left: 10px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }

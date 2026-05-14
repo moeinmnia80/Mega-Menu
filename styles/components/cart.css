@@ -39,10 +39,6 @@
   height: 20px;
   stroke: var(--text-primary);
   cursor: pointer;
-  -webkit-transition: var(--transition-light);
-  -moz-transition: var(--transition-light);
-  -ms-transition: var(--transition-light);
-  -o-transition: var(--transition-light);
   transition: var(--transition-light);
 }
 .c-cart__item--remove:hover {
